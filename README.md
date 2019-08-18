@@ -111,7 +111,7 @@ We will release two pretrained weight based on darknet53 and tinydarknet in some
 
 or
 
-`python sbd_train_che_8.py --syncbn --network tiny_darknet --batch-size 64 --dataset voc --gpus 0 --warmup-epochs 10 --save-prefix ./darknet53_result`
+`python sbd_train_che_8.py --syncbn --network tiny_darknet --batch-size 64 --dataset voc --gpus 0 --warmup-epochs 10 --save-prefix ./tiny_darknet_result`
 
 you can also change the val dataset to voc2012 by --val_2012.
 
@@ -127,7 +127,7 @@ The result are bot very well by direct training. Your can pretrain only bbox in 
 
 or
     
-`python sbd_train_che_8.py --syncbn --network tiny_darknet --only_bbox True --batch-size 20 --dataset cocopretrain --gpus 0 --warmup-epochs 10 --save-prefix ./darknet53_pretrain_coco_result`
+`python sbd_train_che_8.py --syncbn --network tiny_darknet --only_bbox True --batch-size 20 --dataset cocopretrain --gpus 0 --warmup-epochs 10 --save-prefix ./tiny_darknet_pretrain_coco_result`
 
 ##### 3) Results
 To Do:
